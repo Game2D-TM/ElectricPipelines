@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Snap
+  - ElectricPipe
+  - DragPipe
+  - Zone_01
+  - Zone_02
+  - Zone_03
+  - Zone_04
+  - HoriPipe
+  - VertPipe
+  - CornerPipe
+  - End
+  - PreventSnap
+  - PreventElectric
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Particle
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: bg
+    uniqueID: 3196822985
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: game object
+    uniqueID: 1084608991
+    locked: 0

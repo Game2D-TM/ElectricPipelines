@@ -1,0 +1,1218 @@
+fileFormatVersion: 2
+guid: d732623690539db4db00790e23500307
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3863141691874131887
+    second: led_spirte_0
+  - first:
+      213: 8482405514921889239
+    second: led_spirte_1
+  - first:
+      213: -5713733936410354490
+    second: led_spirte_2
+  - first:
+      213: 3121735699479105331
+    second: led_spirte_3
+  - first:
+      213: -3893843523968899258
+    second: led_spirte_4
+  - first:
+      213: 2200462438676100437
+    second: led_spirte_5
+  - first:
+      213: -4876084845655741545
+    second: led_spirte_6
+  - first:
+      213: -8348616095754876452
+    second: led_spirte_7
+  - first:
+      213: -45363556788829099
+    second: led_spirte_8
+  - first:
+      213: -5056857530332179070
+    second: led_spirte_9
+  - first:
+      213: -4993067223605463171
+    second: led_spirte_10
+  - first:
+      213: -5558218243105754595
+    second: led_spirte_11
+  - first:
+      213: -572869925293034085
+    second: led_spirte_12
+  - first:
+      213: 8266063779596482352
+    second: led_spirte_13
+  - first:
+      213: 7490660952452412341
+    second: led_spirte_14
+  - first:
+      213: 4868030738655860686
+    second: led_spirte_15
+  - first:
+      213: 5420136476717206271
+    second: led_spirte_16
+  - first:
+      213: 3855353038674666099
+    second: led_spirte_17
+  - first:
+      213: 8221219756616940001
+    second: led_spirte_18
+  - first:
+      213: 8193340851307267705
+    second: led_spirte_19
+  - first:
+      213: 8205943691644960434
+    second: led_spirte_20
+  - first:
+      213: -4310000487462035289
+    second: led_spirte_21
+  - first:
+      213: -7691625796915421483
+    second: led_spirte_22
+  - first:
+      213: 2614120296127628923
+    second: led_spirte_23
+  - first:
+      213: -8729071568058840355
+    second: led_spirte_24
+  - first:
+      213: 7230817707039366507
+    second: led_spirte_25
+  - first:
+      213: 6678273194436782148
+    second: led_spirte_26
+  - first:
+      213: -8740856824094725985
+    second: led_spirte_27
+  - first:
+      213: -8778014500307085431
+    second: led_spirte_28
+  - first:
+      213: 8087477128982961054
+    second: led_spirte_29
+  - first:
+      213: 557306347825583948
+    second: led_spirte_30
+  - first:
+      213: -1929923219749287229
+    second: led_spirte_31
+  - first:
+      213: -2053399215101960491
+    second: led_spirte_32
+  - first:
+      213: 6452134478597917716
+    second: led_spirte_33
+  - first:
+      213: -903531900701669364
+    second: led_spirte_34
+  - first:
+      213: 4911977586720386954
+    second: led_spirte_35
+  - first:
+      213: -6340500025760798116
+    second: led_spirte_36
+  - first:
+      213: 3824071680461829115
+    second: led_spirte_37
+  - first:
+      213: -4952891921612585827
+    second: led_spirte_38
+  - first:
+      213: 6867483690450047795
+    second: led_spirte_39
+  - first:
+      213: 6326928229599194973
+    second: led_spirte_40
+  - first:
+      213: 7937262893555672887
+    second: led_spirte_41
+  - first:
+      213: 6345805737972643935
+    second: led_spirte_42
+  - first:
+      213: 7281095606214858749
+    second: led_spirte_43
+  - first:
+      213: -3008400985491213918
+    second: led_spirte_44
+  - first:
+      213: 5943446067349238875
+    second: led_spirte_45
+  - first:
+      213: 1852340426702018599
+    second: led_spirte_46
+  - first:
+      213: 5667324268627801824
+    second: led_spirte_47
+  - first:
+      213: 2536347522265506901
+    second: led_spirte_48
+  - first:
+      213: 8923170497562427627
+    second: led_spirte_49
+  - first:
+      213: 4792523816358624750
+    second: led_spirte_50
+  - first:
+      213: 5195227170274616536
+    second: led_spirte_51
+  - first:
+      213: 701559793840514949
+    second: led_spirte_52
+  - first:
+      213: 7793376053127681282
+    second: led_spirte_53
+  - first:
+      213: 7753492559068517887
+    second: led_spirte_54
+  - first:
+      213: 6660867190296929454
+    second: led_spirte_55
+  - first:
+      213: 4053083818440791823
+    second: led_spirte_56
+  - first:
+      213: -7293725403807719320
+    second: led_spirte_57
+  - first:
+      213: 8423137326504387893
+    second: led_spirte_58
+  - first:
+      213: -6077620336115971221
+    second: led_spirte_59
+  - first:
+      213: 2210475364305544927
+    second: led_spirte_60
+  - first:
+      213: 7908414299075491382
+    second: led_spirte_61
+  - first:
+      213: 7816367691572599760
+    second: led_spirte_62
+  - first:
+      213: -4010172309171116186
+    second: led_spirte_63
+  - first:
+      213: 6588689893652648395
+    second: led_spirte_64
+  - first:
+      213: 255954682148881100
+    second: led_spirte_65
+  - first:
+      213: -8188714947857391499
+    second: led_spirte_66
+  - first:
+      213: 1556898472293708998
+    second: led_spirte_67
+  - first:
+      213: 4099525857870521108
+    second: led_spirte_68
+  - first:
+      213: 2943932488225719438
+    second: led_spirte_69
+  - first:
+      213: 1950357674907236223
+    second: led_spirte_70
+  - first:
+      213: 1917475694677681988
+    second: led_spirte_71
+  - first:
+      213: 3751514795989537862
+    second: led_spirte_72
+  - first:
+      213: 2507289369559497087
+    second: led_spirte_73
+  - first:
+      213: 5778963800306634534
+    second: led_spirte_74
+  - first:
+      213: 1993817925209792615
+    second: led_spirte_75
+  - first:
+      213: -5419706576767983364
+    second: led_spirte_76
+  - first:
+      213: 6071787719058981804
+    second: led_spirte_77
+  - first:
+      213: 6392093959682085949
+    second: led_spirte_78
+  - first:
+      213: -1618474967441447707
+    second: led_spirte_79
+  - first:
+      213: 8480474464553737965
+    second: led_spirte_80
+  - first:
+      213: -6441286914557614014
+    second: led_spirte_81
+  - first:
+      213: 3096529253689940085
+    second: led_spirte_82
+  - first:
+      213: -4848510779820571985
+    second: led_spirte_83
+  - first:
+      213: 503153066898649380
+    second: led_spirte_84
+  - first:
+      213: 4471653894508315923
+    second: led_spirte_85
+  - first:
+      213: -2992111082750611539
+    second: led_spirte_86
+  - first:
+      213: -1098353706815439972
+    second: led_spirte_87
+  - first:
+      213: 8928367750230792864
+    second: led_spirte_88
+  - first:
+      213: -1752440072896629008
+    second: led_spirte_89
+  - first:
+      213: -216364195253487060
+    second: led_spirte_90
+  - first:
+      213: -7915299632621107797
+    second: led_spirte_91
+  - first:
+      213: -658860647782509682
+    second: led_spirte_92
+  - first:
+      213: -4934567713738150368
+    second: led_spirte_93
+  - first:
+      213: 2808524123396690548
+    second: led_spirte_94
+  - first:
+      213: -5019135472100964584
+    second: led_spirte_95
+  - first:
+      213: -8894864833016098947
+    second: led_spirte_96
+  - first:
+      213: -453020702588126227
+    second: led_spirte_97
+  - first:
+      213: 3245941000368887655
+    second: led_spirte_98
+  - first:
+      213: 7098154489949851041
+    second: led_spirte_99
+  - first:
+      213: 1911522723025068619
+    second: led_spirte_100
+  - first:
+      213: -6916440045551156280
+    second: led_spirte_101
+  - first:
+      213: 2285910686496719277
+    second: led_spirte_102
+  - first:
+      213: 8536489819482379769
+    second: led_spirte_103
+  - first:
+      213: 6706063429659421164
+    second: led_spirte_104
+  - first:
+      213: -2131691787314240849
+    second: led_spirte_105
+  - first:
+      213: -2224695322606989276
+    second: led_spirte_106
+  - first:
+      213: 4549583282412384320
+    second: led_spirte_107
+  - first:
+      213: -3512054522566095552
+    second: led_spirte_108
+  - first:
+      213: -4901812247933734988
+    second: led_spirte_109
+  - first:
+      213: 5216875059337127923
+    second: led_spirte_110
+  - first:
+      213: -7218567460339949880
+    second: led_spirte_111
+  - first:
+      213: 419788144027449902
+    second: led_spirte_112
+  - first:
+      213: -6403302984225020791
+    second: led_spirte_113
+  - first:
+      213: -5197801313281123667
+    second: led_spirte_114
+  - first:
+      213: 8636995430608504410
+    second: led_spirte_115
+  - first:
+      213: 4163022353909308418
+    second: led_spirte_116
+  - first:
+      213: -4864341241170815809
+    second: led_spirte_117
+  - first:
+      213: -2196001819680246554
+    second: led_spirte_118
+  - first:
+      213: 5101457985825342237
+    second: led_spirte_119
+  - first:
+      213: 65482849680184979
+    second: led_spirte_120
+  - first:
+      213: -3704634424239689852
+    second: led_spirte_121
+  - first:
+      213: 6924811740695091587
+    second: led_spirte_122
+  - first:
+      213: -1434111573243160856
+    second: led_spirte_123
+  - first:
+      213: 8454877113301370622
+    second: led_spirte_124
+  - first:
+      213: 5981539113833570250
+    second: led_spirte_125
+  - first:
+      213: 1137824298988779182
+    second: led_spirte_126
+  - first:
+      213: 7732980743363708290
+    second: led_spirte_127
+  - first:
+      213: -7471088851878144941
+    second: led_spirte_128
+  - first:
+      213: 3727739224286717678
+    second: led_spirte_129
+  - first:
+      213: 8246588313864330355
+    second: led_spirte_130
+  - first:
+      213: 1293124070192641574
+    second: led_spirte_131
+  - first:
+      213: -7719257239138359123
+    second: led_spirte_132
+  - first:
+      213: -4530722147015165865
+    second: led_spirte_133
+  - first:
+      213: 8459756691948192562
+    second: led_spirte_134
+  - first:
+      213: 4665234447457255351
+    second: led_spirte_135
+  - first:
+      213: 4922737728363007255
+    second: led_spirte_136
+  - first:
+      213: -86272875092693148
+    second: led_spirte_137
+  - first:
+      213: 6280248749884783242
+    second: led_spirte_138
+  - first:
+      213: 4596649867551364318
+    second: led_spirte_139
+  - first:
+      213: 4967368505852650327
+    second: led_spirte_140
+  - first:
+      213: -1696609345688217848
+    second: led_spirte_141
+  - first:
+      213: -8382681524309887572
+    second: led_spirte_142
+  - first:
+      213: 2901992889899279804
+    second: led_spirte_143
+  - first:
+      213: -8092700816584127882
+    second: led_spirte_144
+  - first:
+      213: -5613303864459578245
+    second: led_spirte_145
+  - first:
+      213: -2668697217683472836
+    second: led_spirte_146
+  - first:
+      213: -8037809363135273109
+    second: led_spirte_147
+  - first:
+      213: 1375302186952868247
+    second: led_spirte_148
+  - first:
+      213: 5084460077281247495
+    second: led_spirte_149
+  - first:
+      213: 4530292599583762265
+    second: led_spirte_150
+  - first:
+      213: -4964465592497727516
+    second: led_spirte_151
+  - first:
+      213: -823195711207334688
+    second: led_spirte_152
+  - first:
+      213: 942994940518818187
+    second: led_spirte_153
+  - first:
+      213: -2501163078514329184
+    second: led_spirte_154
+  - first:
+      213: 1170392613228291806
+    second: led_spirte_155
+  - first:
+      213: -987071346523011090
+    second: led_spirte_156
+  - first:
+      213: 547030747659676503
+    second: led_spirte_157
+  - first:
+      213: 2795302118489475699
+    second: led_spirte_158
+  - first:
+      213: 8252233388862381208
+    second: led_spirte_159
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: led_spirte_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 40
+        width: 257
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15047da591d536ac0800000000000000
+      internalID: -3863141691874131887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_1
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 44
+        width: 257
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddcbb5cfde87b570800000000000000
+      internalID: 8482405514921889239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_2
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 41
+        width: 257
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc9a2be14db4b0b0800000000000000
+      internalID: -5713733936410354490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_3
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 41
+        width: 257
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f8b1a3412a25b20800000000000000
+      internalID: 3121735699479105331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_4
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 41
+        width: 257
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647e0e602f946f9c0800000000000000
+      internalID: -3893843523968899258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_5
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 38
+        width: 257
+        height: 491
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555f0eeedec998e10800000000000000
+      internalID: 2200462438676100437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_6
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 104
+        width: 101
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b2600eaaaa45cb0800000000000000
+      internalID: -4876084845655741545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_7
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 105
+        width: 101
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd90c6ec4e1c32c80800000000000000
+      internalID: -8348616095754876452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_8
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 104
+        width: 101
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5548adfd516de5ff0800000000000000
+      internalID: -45363556788829099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_9
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 104
+        width: 101
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2859ac85ede62d9b0800000000000000
+      internalID: -5056857530332179070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_10
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 105
+        width: 101
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77b95580df05bab0800000000000000
+      internalID: -4993067223605463171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_11
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 105
+        width: 101
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12f593e4fd3dd2b0800000000000000
+      internalID: -5558218243105754595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_12
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 84
+        width: 101
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95776096d1cc08f0800000000000000
+      internalID: -572869925293034085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_13
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 85
+        width: 100
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03732994635f6b270800000000000000
+      internalID: 8266063779596482352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_14
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 84
+        width: 100
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3b0d3f27c24f760800000000000000
+      internalID: 7490660952452412341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_15
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 84
+        width: 100
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7d3453a28be8340800000000000000
+      internalID: 4868030738655860686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_16
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 85
+        width: 100
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffacdd09861383b40800000000000000
+      internalID: 5420136476717206271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_17
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 85
+        width: 100
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3722de18927f08530800000000000000
+      internalID: 3855353038674666099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_18
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 65
+        width: 91
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9739d8fc3a71270800000000000000
+      internalID: 8221219756616940001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_19
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 65
+        width: 90
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976cdd5181894b170800000000000000
+      internalID: 8193340851307267705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_20
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 64
+        width: 90
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2befa538f4e51e170800000000000000
+      internalID: 8205943691644960434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_21
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 64
+        width: 90
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0a01b546dcf24c0800000000000000
+      internalID: -4310000487462035289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_22
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 65
+        width: 91
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de10a5f61bd14590800000000000000
+      internalID: -7691625796915421483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_23
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 65
+        width: 91
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7683d22f88374420800000000000000
+      internalID: 2614120296127628923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_24
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 40
+        width: 76
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda04ee48ab1cd680800000000000000
+      internalID: -8729071568058840355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_25
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 41
+        width: 76
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d9fafd466095460800000000000000
+      internalID: 7230817707039366507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_26
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 40
+        width: 76
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448ea6b561efdac50800000000000000
+      internalID: 6678273194436782148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_27
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 40
+        width: 76
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98e84f870d32b680800000000000000
+      internalID: -8740856824094725985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_28
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 41
+        width: 76
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987d7f3e15a3e2680800000000000000
+      internalID: -8778014500307085431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: led_spirte_29
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 41
+        width: 76
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b102a799d7c3070800000000000000
+      internalID: 8087477128982961054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
