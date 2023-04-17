@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 using UnityEngine.UI;
 using System.Threading;
 using Assets.Scripts;
+using UnityEngine.EventSystems;
+using TMPro;
 
 public class SceneScript : MonoBehaviour
 {
@@ -25,7 +27,7 @@ public class SceneScript : MonoBehaviour
     public Text ScoreBoardText;
     public int nextScenePoint { get; set; } = 0;
     public int CurrentElectric { get; set; } = 0;
-    public static readonly int DEFAULT_PREVENTELEC_POINT = -50; 
+    public static readonly int DEFAULT_PREVENTELEC_POINT = -50;
     public static int PREVENTELEC_POINT_DIF = 10;
     void Start()
     {
@@ -45,7 +47,7 @@ public class SceneScript : MonoBehaviour
         int examplePointIndex = 0;
         if (dragPipesGos != null && dragPipesGos.Length > 0)
         {
-            foreach(GameObject dragPipeGo in dragPipesGos)
+            foreach (GameObject dragPipeGo in dragPipesGos)
             {
                 DragTarget dragTarget = dragPipeGo.transform.GetComponent<DragTarget>();
                 nextScenePoint += dragTarget.ElectricCount;
@@ -53,14 +55,14 @@ public class SceneScript : MonoBehaviour
                 examplePointIndex++;
             }
         }
-        examplePointText[examplePointIndex].text = ": "+ DEFAULT_PREVENTELEC_POINT.ToString() + "v";
+        examplePointText[examplePointIndex].text = ": " + DEFAULT_PREVENTELEC_POINT.ToString() + "v";
         if (preventSnaps != null && preventSnaps.Length > 0)
         {
             int indexSnap = Random.RandomRange(1, preventSnaps.Length + 1);
             nextScenePoint += DEFAULT_PREVENTELEC_POINT + (-PREVENTELEC_POINT_DIF * indexSnap);
             int i = 0;
             int[] points = new int[2];
-            foreach(Snap snap in preventSnaps)
+            foreach (Snap snap in preventSnaps)
             {
                 int preventSnapPoint = snap.ElectricCount - (PREVENTELEC_POINT_DIF * (i + 1));
                 preventPointText[i].text = preventSnapPoint + "v";
@@ -105,7 +107,7 @@ public class SceneScript : MonoBehaviour
                 i++;
             }
         }
-        if(CurrentElectric != nextScenePoint)
+        if (CurrentElectric != nextScenePoint)
         {
             nextStage = false;
             if (isSnap && preventSnap)
@@ -123,7 +125,8 @@ public class SceneScript : MonoBehaviour
             ScoreBoard.SetActive(true);
             timer.Stop();
             //nextStageObj.SetActive(true);
-        } else
+        }
+        else
         {
             //nextStageObj.SetActive(false);
         }
@@ -194,7 +197,8 @@ public class SceneScript : MonoBehaviour
                 GameObject.Find("Audio Source").GetComponent<DontDestroyAudio>().CanDestroy = true;
                 Destroy(this);
             }
-        } else isRestart = false;
+        }
+        else isRestart = false;
     }
 
     public void Restart()
@@ -227,6 +231,15 @@ public class SceneScript : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+    }
+
+    public void ChooseLevel()
+    {
+        var obj = EventSystem.current.currentSelectedGameObject;
+        Debug.Log(obj.name);
+        var name = obj.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        string level = name.text.Split(" ")[1];
+        SceneManager.LoadScene($"Level_{level}");
     }
 }
 

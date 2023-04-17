@@ -504,6 +504,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1210,6 +1211,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      led_spirte_26: 6678273194436782148
+      led_spirte_4: -3893843523968899258
+      led_spirte_17: 3855353038674666099
+      led_spirte_20: 8205943691644960434
+      led_spirte_29: 8087477128982961054
+      led_spirte_5: 2200462438676100437
+      led_spirte_10: -4993067223605463171
+      led_spirte_3: 3121735699479105331
+      led_spirte_9: -5056857530332179070
+      led_spirte_13: 8266063779596482352
+      led_spirte_24: -8729071568058840355
+      led_spirte_1: 8482405514921889239
+      led_spirte_6: -4876084845655741545
+      led_spirte_7: -8348616095754876452
+      led_spirte_12: -572869925293034085
+      led_spirte_21: -4310000487462035289
+      led_spirte_2: -5713733936410354490
+      led_spirte_16: 5420136476717206271
+      led_spirte_23: 2614120296127628923
+      led_spirte_18: 8221219756616940001
+      led_spirte_14: 7490660952452412341
+      led_spirte_22: -7691625796915421483
+      led_spirte_25: 7230817707039366507
+      led_spirte_0: -3863141691874131887
+      led_spirte_19: 8193340851307267705
+      led_spirte_15: 4868030738655860686
+      led_spirte_8: -45363556788829099
+      led_spirte_11: -5558218243105754595
+      led_spirte_28: -8778014500307085431
+      led_spirte_27: -8740856824094725985
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
