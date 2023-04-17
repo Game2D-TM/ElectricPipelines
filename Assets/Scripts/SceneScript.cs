@@ -21,7 +21,7 @@ public class SceneScript : MonoBehaviour
     public Text winScoreText;
     public Text[] preventPointText;
     public Text[] examplePointText;
-
+    public Text[] preventExamplePointText;
     GameObject nextStageObj;
     GameObject ScoreBoard;
     public Text ScoreBoardText;
@@ -55,18 +55,26 @@ public class SceneScript : MonoBehaviour
                 examplePointIndex++;
             }
         }
-        examplePointText[examplePointIndex].text = ": " + DEFAULT_PREVENTELEC_POINT.ToString() + "v";
+        GameObject[] preventDragPipesGos = GameObject.FindGameObjectsWithTag("PreventElectric");
+        examplePointIndex = 0;
+        if (preventDragPipesGos != null && preventDragPipesGos.Length > 0)
+        {
+            foreach (GameObject dragPipeGo in preventDragPipesGos)
+            {
+                preventExamplePointText[examplePointIndex].text = $": {DEFAULT_PREVENTELEC_POINT}v";
+                examplePointIndex++;
+            }
+        }
         if (preventSnaps != null && preventSnaps.Length > 0)
         {
             int indexSnap = Random.RandomRange(1, preventSnaps.Length + 1);
             nextScenePoint += DEFAULT_PREVENTELEC_POINT + (-PREVENTELEC_POINT_DIF * indexSnap);
             int i = 0;
-            int[] points = new int[2];
             foreach (Snap snap in preventSnaps)
             {
                 int preventSnapPoint = snap.ElectricCount - (PREVENTELEC_POINT_DIF * (i + 1));
                 preventPointText[i].text = preventSnapPoint + "v";
-                Debug.Log($"PreventSnap {i}: {preventSnapPoint}");
+                Debug.Log($"PreventSnap {i}: {preventSnapPoint}"); // prevent snap point
                 i++;
             }
         }
@@ -107,6 +115,7 @@ public class SceneScript : MonoBehaviour
                 i++;
             }
         }
+        Debug.Log("Current Point: " + CurrentElectric);
         if (CurrentElectric != nextScenePoint)
         {
             nextStage = false;
@@ -194,7 +203,11 @@ public class SceneScript : MonoBehaviour
             {
                 restartCount = 2;
                 SceneManager.LoadScene("GameOver");
-                GameObject.Find("Audio Source").GetComponent<DontDestroyAudio>().CanDestroy = true;
+                var audio = GameObject.Find("Audio Source").GetComponent<DontDestroyAudio>();
+                if(audio != null)
+                {
+                    audio.CanDestroy = true;
+                }
                 Destroy(this);
             }
         }
@@ -233,10 +246,21 @@ public class SceneScript : MonoBehaviour
         }
     }
 
+    public void BackScene()
+    {
+        Scene curScene = SceneManager.GetActiveScene();
+        if (curScene.name.Equals("LevelChoose"))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+        else
+        {
+            SceneManager.LoadScene("LevelChoose");
+        }
+    }
     public void ChooseLevel()
     {
         var obj = EventSystem.current.currentSelectedGameObject;
-        Debug.Log(obj.name);
         var name = obj.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         string level = name.text.Split(" ")[1];
         SceneManager.LoadScene($"Level_{level}");

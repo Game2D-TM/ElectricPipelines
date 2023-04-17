@@ -69,7 +69,10 @@ public class NonElectricTarget : MonoBehaviour
             { 
                 newSprite = SpriteManager.Instance.GetNonElectricSprite("off_cross"); 
             }
-
+            if (Name.ToLower().Contains("circlecorner"))
+            {
+                newSprite = SpriteManager.Instance.GetNonElectricSprite("off-circlecorner");
+            }
             spriteR.sprite = newSprite;
         }
     }
