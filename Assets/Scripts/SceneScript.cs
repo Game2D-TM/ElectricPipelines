@@ -22,6 +22,7 @@ public class SceneScript : MonoBehaviour
     public Text[] preventPointText;
     public Text[] examplePointText;
     public Text[] preventExamplePointText;
+
     GameObject nextStageObj;
     GameObject ScoreBoard;
     public Text ScoreBoardText;
@@ -115,7 +116,6 @@ public class SceneScript : MonoBehaviour
                 i++;
             }
         }
-        Debug.Log("Current Point: " + CurrentElectric);
         if (CurrentElectric != nextScenePoint)
         {
             nextStage = false;

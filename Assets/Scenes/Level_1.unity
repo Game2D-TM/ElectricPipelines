@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 145060450}
   - component: {fileID: 145060449}
   m_Layer: 5
-  m_Name: Pipepoint_3
+  m_Name: PreventPipepoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1313,7 +1313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &627386679
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1832,6 +1832,7 @@ MonoBehaviour:
   examplePointText:
   - {fileID: 1254746811}
   - {fileID: 1863310859}
+  preventExamplePointText:
   - {fileID: 145060450}
   ScoreBoardText: {fileID: 629992851}
 --- !u!1 &1065267910
