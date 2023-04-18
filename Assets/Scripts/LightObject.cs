@@ -20,24 +20,34 @@ public class LightObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(sceneScript != null)
+        if (sceneScript != null)
         {
-            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Led-Broken")) {
+            if (!sceneScript.Running)
+            {
                 StartCoroutine(DelayFinishAnimate(animator.GetCurrentAnimatorStateInfo(0).length));
             }
-            ElectricCount = sceneScript.CurrentElectric;
-            if(ElectricCount <= 99)
+            else
             {
-                state = ElectricState.Normal;
-            } else if(ElectricCount > 199)
-            {
-                state = ElectricState.Broken;
-            } else if(ElectricCount > 99)
-            {
-                state = ElectricState.Light;
+                ElectricCount = sceneScript.CurrentElectric;
+                if (ElectricCount < sceneScript.nextScenePoint)
+                {
+                    state = ElectricState.Normal;
+                }
+                else if (ElectricCount > sceneScript.nextScenePoint)
+                {
+                    state = ElectricState.Broken;
+                }
+                else if (ElectricCount == sceneScript.nextScenePoint)
+                {
+                    state = ElectricState.Light;
+                }
+                PlayAnimate(state);
             }
-            PlayAnimate(state);
         }
+    }
+
+    private void FixedUpdate()
+    {
     }
 
     IEnumerator DelayFinishAnimate(float delay)

@@ -30,6 +30,8 @@ public class SceneScript : MonoBehaviour
     public int CurrentElectric { get; set; } = 0;
     public static readonly int DEFAULT_PREVENTELEC_POINT = -50;
     public static int PREVENTELEC_POINT_DIF = 10;
+
+    public bool Running = true;
     void Start()
     {
         nextStageObj = GameObject.Find("Next");
@@ -43,7 +45,6 @@ public class SceneScript : MonoBehaviour
         LoadPreventSnap();
         restartText.text = "Live Left: " + restartCount;
         PREVENTELEC_POINT_DIF = Utils.RandomeIntEvenNumber(10, 80);
-        //nextStageObj.SetActive(false);
         GameObject[] dragPipesGos = GameObject.FindGameObjectsWithTag("DragPipe");
         int examplePointIndex = 0;
         if (dragPipesGos != null && dragPipesGos.Length > 0)
@@ -86,6 +87,7 @@ public class SceneScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Running = true;
         nextStage = true;
         bool isSnap = true;
         CurrentElectric = 0;
@@ -116,32 +118,30 @@ public class SceneScript : MonoBehaviour
                 i++;
             }
         }
+        Debug.Log("Current Electric Point: " + CurrentElectric);
         if (CurrentElectric != nextScenePoint)
         {
             nextStage = false;
             if (isSnap && preventSnap)
             {
                 CurrentElectric = 0;
+                Running = false;
                 RestartAnimation();
             }
         }
         if (nextStage)
         {
+            Running = false;
+            timer.Stop();
             SpriteRenderer spriteRenderer = GameObject.Find("bg").GetComponent<SpriteRenderer>();
             spriteRenderer.sortingLayerName = "game object";
             spriteRenderer.sortingOrder = 15;
             ScoreBoardText.text = CurrentElectric.ToString();
             ScoreBoard.SetActive(true);
-            timer.Stop();
-            //nextStageObj.SetActive(true);
-        }
-        else
-        {
-            //nextStageObj.SetActive(false);
         }
         if (Input.GetKeyDown("r") && !nextStage)
         {
-            //if (restartCount == 0) return;
+            Running = false;
             RestartAnimation();
         }
     }
@@ -203,10 +203,14 @@ public class SceneScript : MonoBehaviour
             {
                 restartCount = 2;
                 SceneManager.LoadScene("GameOver");
-                var audio = GameObject.Find("Audio Source").GetComponent<DontDestroyAudio>();
+                var audio = GameObject.Find("Audio Source");
                 if(audio != null)
                 {
-                    audio.CanDestroy = true;
+                    var compo = audio.GetComponent<DontDestroyAudio>();
+                    if(compo != null)
+                    {
+                        compo.CanDestroy = true;
+                    }
                 }
                 Destroy(this);
             }
