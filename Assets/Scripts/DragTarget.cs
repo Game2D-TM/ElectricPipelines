@@ -16,6 +16,8 @@ public class DragTarget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        var sceneGo = GameObject.FindGameObjectWithTag("End");
+        var sceneScript = sceneGo.GetComponent<SceneScript>();
         Index = gameObject.name.Split('_')[1];
         Name = gameObject.name.Split('_')[0];
         Zone = gameObject.name.Split('_')[2];
@@ -82,26 +84,6 @@ public class DragTarget : MonoBehaviour
     public void LoadElectricFromPipe()
     {
         ElectricCount = Utils.RandomeIntEvenNumber(100, 150);
-        //if (Name.ToLower().Contains("corner"))
-        //{
-        //    ElectricCount = 90;
-        //}
-        //if (Name.ToLower().Contains("straight"))
-        //{
-        //    ElectricCount = 100;
-        //}
-        //if (Name.ToLower().Contains("tpipe"))
-        //{
-        //    ElectricCount = 70;
-        //}
-        //if (Name.ToLower().Contains("cross"))
-        //{
-        //    ElectricCount = 50;
-        //}
-        //if (Name.ToLower().Contains("circlecorner"))
-        //{
-        //    ElectricCount = 40;
-        //}
         if (Name.ToLower().Contains("prevent"))
         {
             ElectricCount = SceneScript.DEFAULT_PREVENTELEC_POINT;

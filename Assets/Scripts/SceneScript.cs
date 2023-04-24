@@ -32,6 +32,7 @@ public class SceneScript : MonoBehaviour
     public static int PREVENTELEC_POINT_DIF = 10;
 
     public bool Running = true;
+
     void Start()
     {
         nextStageObj = GameObject.Find("Next");
@@ -45,41 +46,9 @@ public class SceneScript : MonoBehaviour
         LoadPreventSnap();
         restartText.text = "Live Left: " + restartCount;
         PREVENTELEC_POINT_DIF = Utils.RandomeIntEvenNumber(10, 80);
-        GameObject[] dragPipesGos = GameObject.FindGameObjectsWithTag("DragPipe");
-        int examplePointIndex = 0;
-        if (dragPipesGos != null && dragPipesGos.Length > 0)
-        {
-            foreach (GameObject dragPipeGo in dragPipesGos)
-            {
-                DragTarget dragTarget = dragPipeGo.transform.GetComponent<DragTarget>();
-                nextScenePoint += dragTarget.ElectricCount;
-                examplePointText[examplePointIndex].text = $": {dragTarget.ElectricCount}v";
-                examplePointIndex++;
-            }
-        }
-        GameObject[] preventDragPipesGos = GameObject.FindGameObjectsWithTag("PreventElectric");
-        examplePointIndex = 0;
-        if (preventDragPipesGos != null && preventDragPipesGos.Length > 0)
-        {
-            foreach (GameObject dragPipeGo in preventDragPipesGos)
-            {
-                preventExamplePointText[examplePointIndex].text = $": {DEFAULT_PREVENTELEC_POINT}v";
-                examplePointIndex++;
-            }
-        }
-        if (preventSnaps != null && preventSnaps.Length > 0)
-        {
-            int indexSnap = Random.RandomRange(1, preventSnaps.Length + 1);
-            nextScenePoint += DEFAULT_PREVENTELEC_POINT + (-PREVENTELEC_POINT_DIF * indexSnap);
-            int i = 0;
-            foreach (Snap snap in preventSnaps)
-            {
-                int preventSnapPoint = snap.ElectricCount - (PREVENTELEC_POINT_DIF * (i + 1));
-                preventPointText[i].text = preventSnapPoint + "v";
-                Debug.Log($"PreventSnap {i}: {preventSnapPoint}"); // prevent snap point
-                i++;
-            }
-        }
+        LoadDragTargerPoint();
+        LoadPreventPipePoint();
+        LoadPreventPointText();
         winScoreText.text = $"Win Score: {nextScenePoint}";
         Debug.Log($"Win Score: {nextScenePoint}");
     }
@@ -118,7 +87,7 @@ public class SceneScript : MonoBehaviour
                 i++;
             }
         }
-        Debug.Log("Current Electric Point: " + CurrentElectric);
+        //Debug.Log("Current Electric Point: " + CurrentElectric);
         if (CurrentElectric != nextScenePoint)
         {
             nextStage = false;
@@ -268,6 +237,69 @@ public class SceneScript : MonoBehaviour
         var name = obj.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         string level = name.text.Split(" ")[1];
         SceneManager.LoadScene($"Level_{level}");
+    }
+
+
+    public void LoadDragTargerPoint()
+    {
+        GameObject[] dragPipesGos = GameObject.FindGameObjectsWithTag("DragPipe");
+        if (dragPipesGos != null && dragPipesGos.Length > 0)
+        {
+            foreach (GameObject dragPipeGo in dragPipesGos)
+            {
+                DragTarget dragTarget = dragPipeGo.transform.GetComponent<DragTarget>();
+                nextScenePoint += dragTarget.ElectricCount;
+                if (examplePointText != null && examplePointText.Length > 0)
+                {
+                    foreach (var exampleText in examplePointText)
+                    {
+                        Debug.Log($"{dragTarget.Name}: " + dragTarget.ElectricCount);
+                        if (dragPipeGo.name.ToLower().Contains(exampleText.name.ToLower()))
+                        {
+                            exampleText.text = $": {dragTarget.ElectricCount}v";
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    public void LoadPreventPipePoint()
+    {
+        GameObject[] preventDragPipesGos = GameObject.FindGameObjectsWithTag("PreventElectric");
+        if (preventDragPipesGos != null && preventDragPipesGos.Length > 0)
+        {
+            foreach (GameObject dragPipeGo in preventDragPipesGos)
+            {
+                nextScenePoint += DEFAULT_PREVENTELEC_POINT;
+                foreach (var exampleText in preventExamplePointText)
+                {
+                    if (dragPipeGo.name.ToLower().Contains(exampleText.name.ToLower()))
+                    {
+                        exampleText.text = $": {DEFAULT_PREVENTELEC_POINT}v";
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    public void LoadPreventPointText()
+    {
+        if (preventSnaps != null && preventSnaps.Length > 0)
+        {
+            int indexSnap = Random.RandomRange(1, preventSnaps.Length + 1);
+            nextScenePoint += (-PREVENTELEC_POINT_DIF * indexSnap);
+            int i = 0;
+            foreach (Snap snap in preventSnaps)
+            {
+                int preventSnapPoint = snap.ElectricCount - (PREVENTELEC_POINT_DIF * (i + 1));
+                preventPointText[i].text = preventSnapPoint + "v";
+                //Debug.Log($"PreventSnap {i}: {preventSnapPoint}"); // prevent snap point
+                i++;
+            }
+        }
     }
 }
 

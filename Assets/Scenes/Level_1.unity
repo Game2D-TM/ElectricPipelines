@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 145060450}
   - component: {fileID: 145060449}
   m_Layer: 5
-  m_Name: PreventPipepoint_1
+  m_Name: prevent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1835,6 +1835,7 @@ MonoBehaviour:
   preventExamplePointText:
   - {fileID: 145060450}
   ScoreBoardText: {fileID: 629992851}
+  Running: 1
 --- !u!1 &1065267910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2272,7 +2273,7 @@ GameObject:
   - component: {fileID: 1254746811}
   - component: {fileID: 1254746810}
   m_Layer: 5
-  m_Name: Pipepoint_1
+  m_Name: circlecorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3788,7 +3789,7 @@ GameObject:
   - component: {fileID: 1818165209}
   - component: {fileID: 1818165208}
   m_Layer: 0
-  m_Name: Straight-pipe_02_01 (1)
+  m_Name: Straight-pipe_03_01
   m_TagString: HoriPipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4023,7 +4024,7 @@ GameObject:
   - component: {fileID: 1863310859}
   - component: {fileID: 1863310858}
   m_Layer: 5
-  m_Name: Pipepoint_2
+  m_Name: straight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

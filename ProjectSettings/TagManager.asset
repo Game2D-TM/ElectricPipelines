@@ -17,6 +17,8 @@ TagManager:
   - End
   - PreventSnap
   - PreventElectric
+  - Zone_05
+  - CircleCornerPipe
   layers:
   - Default
   - TransparentFX
