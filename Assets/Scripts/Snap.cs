@@ -14,7 +14,7 @@ public class Snap : MonoBehaviour
     public bool IsSnapped { get; set; } = false;
     Vector2 _snapMousePos;
     Transform _snapTarget;
-    DragTarget target;
+    public DragTarget target;
     // Start is called before the first frame update
     void Start()
     {

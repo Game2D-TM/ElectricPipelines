@@ -42,10 +42,10 @@ public class SceneScript : MonoBehaviour
         {
             ScoreBoard.SetActive(false);
         }
-        LoadSnap();
-        LoadPreventSnap();
         restartText.text = "Live Left: " + restartCount;
         PREVENTELEC_POINT_DIF = Utils.RandomeIntEvenNumber(10, 80);
+        LoadSnap();
+        LoadPreventSnap();
         LoadDragTargerPoint();
         LoadPreventPipePoint();
         LoadPreventPointText();
@@ -70,24 +70,27 @@ public class SceneScript : MonoBehaviour
                     isSnap = false;
                     break;
                 }
-                CurrentElectric += snap.ElectricCount;
+                else
+                {
+                    CurrentElectric += snap.target.ElectricCount;
+                }
             }
         }
         bool preventSnap = false;
         if (preventSnaps != null && preventSnaps.Length > 0)
         {
-            int i = 1;
             foreach (Snap snap in preventSnaps)
             {
                 if (snap.IsSnapped)
                 {
                     preventSnap = true;
-                    CurrentElectric += snap.ElectricCount - (PREVENTELEC_POINT_DIF * i);
+                    CurrentElectric += snap.ElectricCount + snap.target.ElectricCount;
+                    //Debug.Log($"{snap.target.Name} : {snap.target.ElectricCount}" +
+                    //    $"| {snap.Name}: {snap.ElectricCount}");
                 }
-                i++;
             }
         }
-        //Debug.Log("Current Electric Point: " + CurrentElectric);
+        Debug.Log("Current Electric Point: " + CurrentElectric);
         if (CurrentElectric != nextScenePoint)
         {
             nextStage = false;
@@ -95,23 +98,16 @@ public class SceneScript : MonoBehaviour
             {
                 CurrentElectric = 0;
                 Running = false;
-                RestartAnimation();
             }
         }
         if (nextStage)
         {
-            Running = false;
             timer.Stop();
             SpriteRenderer spriteRenderer = GameObject.Find("bg").GetComponent<SpriteRenderer>();
             spriteRenderer.sortingLayerName = "game object";
             spriteRenderer.sortingOrder = 15;
             ScoreBoardText.text = CurrentElectric.ToString();
             ScoreBoard.SetActive(true);
-        }
-        if (Input.GetKeyDown("r") && !nextStage)
-        {
-            Running = false;
-            RestartAnimation();
         }
     }
 
@@ -173,10 +169,10 @@ public class SceneScript : MonoBehaviour
                 restartCount = 2;
                 SceneManager.LoadScene("GameOver");
                 var audio = GameObject.Find("Audio Source");
-                if(audio != null)
+                if (audio != null)
                 {
                     var compo = audio.GetComponent<DontDestroyAudio>();
-                    if(compo != null)
+                    if (compo != null)
                     {
                         compo.CanDestroy = true;
                     }
@@ -249,11 +245,11 @@ public class SceneScript : MonoBehaviour
             {
                 DragTarget dragTarget = dragPipeGo.transform.GetComponent<DragTarget>();
                 nextScenePoint += dragTarget.ElectricCount;
+                Debug.Log($"{dragTarget.Name}: " + dragTarget.ElectricCount);
                 if (examplePointText != null && examplePointText.Length > 0)
                 {
                     foreach (var exampleText in examplePointText)
                     {
-                        Debug.Log($"{dragTarget.Name}: " + dragTarget.ElectricCount);
                         if (dragPipeGo.name.ToLower().Contains(exampleText.name.ToLower()))
                         {
                             exampleText.text = $": {dragTarget.ElectricCount}v";
@@ -273,6 +269,7 @@ public class SceneScript : MonoBehaviour
             foreach (GameObject dragPipeGo in preventDragPipesGos)
             {
                 nextScenePoint += DEFAULT_PREVENTELEC_POINT;
+                Debug.Log("prevent " + dragPipeGo.name + ": -50");
                 foreach (var exampleText in preventExamplePointText)
                 {
                     if (dragPipeGo.name.ToLower().Contains(exampleText.name.ToLower()))
@@ -290,14 +287,14 @@ public class SceneScript : MonoBehaviour
         if (preventSnaps != null && preventSnaps.Length > 0)
         {
             int indexSnap = Random.RandomRange(1, preventSnaps.Length + 1);
-            nextScenePoint += (-PREVENTELEC_POINT_DIF * indexSnap);
-            int i = 0;
+            nextScenePoint += -(PREVENTELEC_POINT_DIF * indexSnap);
             foreach (Snap snap in preventSnaps)
             {
-                int preventSnapPoint = snap.ElectricCount - (PREVENTELEC_POINT_DIF * (i + 1));
-                preventPointText[i].text = preventSnapPoint + "v";
-                //Debug.Log($"PreventSnap {i}: {preventSnapPoint}"); // prevent snap point
-                i++;
+                int i = int.Parse(snap.name.Split("_")[1]);
+                int preventSnapPoint = -(PREVENTELEC_POINT_DIF * (i));
+                snap.ElectricCount = preventSnapPoint;
+                Debug.Log($"prevent Snap {i}: {snap.ElectricCount}");
+                preventPointText[i - 1].text = preventSnapPoint + "v";
             }
         }
     }

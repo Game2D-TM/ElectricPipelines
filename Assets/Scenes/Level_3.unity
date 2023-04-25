@@ -473,7 +473,7 @@ GameObject:
   - component: {fileID: 265652817}
   - component: {fileID: 265652815}
   m_Layer: 5
-  m_Name: PreventElectric1
+  m_Name: PreventElectric_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -845,6 +845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &375222112
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -1242,6 +1243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &528458397
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -1338,6 +1340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &539772073
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -1840,6 +1843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &634731821
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -2429,6 +2433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &797822318
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -3622,6 +3627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &1063948624
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -3807,6 +3813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &1209256366
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -3871,7 +3878,7 @@ GameObject:
   - component: {fileID: 1210483506}
   - component: {fileID: 1210483505}
   m_Layer: 5
-  m_Name: PreventElectric5
+  m_Name: PreventElectric_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4115,7 +4122,7 @@ GameObject:
   - component: {fileID: 1236245109}
   - component: {fileID: 1236245108}
   m_Layer: 5
-  m_Name: PreventElectric4
+  m_Name: PreventElectric_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4413,7 +4420,7 @@ GameObject:
   - component: {fileID: 1481887097}
   - component: {fileID: 1481887098}
   m_Layer: 5
-  m_Name: PreventElectric3
+  m_Name: PreventElectric_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4616,7 +4623,7 @@ GameObject:
   - component: {fileID: 1640951266}
   - component: {fileID: 1640951264}
   m_Layer: 5
-  m_Name: PreventElectric2
+  m_Name: PreventElectric_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5174,6 +5181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &1709870044
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -5618,6 +5626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &1897563109
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -5908,7 +5917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1963236470
 Transform:
   m_ObjectHideFlags: 0
@@ -6616,6 +6625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &2123890184
 SpriteMask:
   m_ObjectHideFlags: 0

@@ -865,7 +865,7 @@ GameObject:
   - component: {fileID: 389106889}
   - component: {fileID: 389106887}
   m_Layer: 5
-  m_Name: PreventElectric1
+  m_Name: PreventElectric_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1217,7 +1217,7 @@ GameObject:
   - component: {fileID: 672194513}
   - component: {fileID: 672194512}
   m_Layer: 5
-  m_Name: PreventElectric3
+  m_Name: PreventElectric_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1642,6 +1642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &889098611
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -1741,7 +1742,7 @@ GameObject:
   - component: {fileID: 941329452}
   - component: {fileID: 941329453}
   m_Layer: 5
-  m_Name: PreventElectric2
+  m_Name: PreventElectric_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2463,6 +2464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &1048744608
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -2692,6 +2694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &1124151127
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -3261,6 +3264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &1296459870
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -4131,6 +4135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &1850340838
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -4462,6 +4467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!331 &1914343180
 SpriteMask:
   m_ObjectHideFlags: 0

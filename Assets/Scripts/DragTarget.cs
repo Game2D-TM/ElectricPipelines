@@ -49,7 +49,7 @@ public class DragTarget : MonoBehaviour
         spriteR = gameObject.GetComponent<SpriteRenderer>();
         sprite = spriteR.sprite;
         LoadElectricFromPipe();
-        Debug.Log($"Pipe:{Name}: {ElectricCount} ");
+        //Debug.Log($"Pipe:{Name}: {ElectricCount} ");
     }
 
     void FindSnap()
@@ -69,11 +69,6 @@ public class DragTarget : MonoBehaviour
                 if (snap.IsSnapped)
                 {
                     haveSnap = true;
-                    snap.ElectricCount = ElectricCount;
-                }
-                else
-                {
-                    snap.ElectricCount = 0;
                 }
             }
            inSnap = haveSnap; 
