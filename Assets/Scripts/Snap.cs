@@ -14,19 +14,23 @@ public class Snap : MonoBehaviour
     public bool IsSnapped { get; set; } = false;
     Vector2 _snapMousePos;
     Transform _snapTarget;
-    public DragTarget target;
-    // Start is called before the first frame update
-    void Start()
+    public DragTarget Target { get; set; }
+    private void Awake()
     {
         Name = gameObject.name.Split('_')[0];
         Index = gameObject.name.Split('_')[1];
-        Zone =  gameObject.name.Split('_')[2];
+        Zone = gameObject.name.Split('_')[2];
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_snapTarget == null || target == null) return;
+        if (_snapTarget == null || Target == null) return;
         if (this._snapTarget != null)
         {
             if (Vector2.Distance(this._snapMousePos, transform.position) <= _unsnapMouseDistance)
@@ -34,10 +38,10 @@ public class Snap : MonoBehaviour
                 this._snapTarget = null;
                 //Here you could also move the object to an appropriate distance regarding the current mouse position so the user feels he got back control of it
                 //Also if you have troubles with the trigger being re-triggerer too fast, you could have a add a small timer to prevent it for about half a second...
-                if (target != null)
+                if (Target != null)
                 {
                     IsSnapped = true;
-                    target.transform.position = transform.position;
+                    Target.transform.position = transform.position;
                 }
                 return;
             }
@@ -49,6 +53,5 @@ public class Snap : MonoBehaviour
     {
         this._snapTarget = other.transform;
         this._snapMousePos = other.transform.position;
-        target = other;
     }
 }

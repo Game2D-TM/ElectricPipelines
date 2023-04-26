@@ -45,11 +45,6 @@ public class LightObject : MonoBehaviour
             }
         }
     }
-
-    private void FixedUpdate()
-    {
-    }
-
     IEnumerator DelayFinishAnimate(float delay)
     {
         yield return new WaitForSeconds(delay);

@@ -32,9 +32,11 @@ public class SceneScript : MonoBehaviour
     public static int PREVENTELEC_POINT_DIF = 10;
 
     public bool Running = true;
+    public bool LoadObj = false;
 
     void Start()
     {
+        Thread.Sleep(500);
         nextStageObj = GameObject.Find("Next");
         timer = GameObject.Find("Timer").GetComponent<Timer>();
         ScoreBoard = GameObject.Find("score");
@@ -51,63 +53,81 @@ public class SceneScript : MonoBehaviour
         LoadPreventPointText();
         winScoreText.text = $"Win Score: {nextScenePoint}";
         Debug.Log($"Win Score: {nextScenePoint}");
+        LoadObj = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Running = true;
-        nextStage = true;
-        bool isSnap = true;
-        CurrentElectric = 0;
-        if (snaps != null && snaps.Length > 0)
+        if (LoadObj)
         {
-            foreach (Snap snap in snaps)
+            Running = true;
+            nextStage = true;
+            bool isSnap = true;
+            CurrentElectric = 0;
+            if (snaps != null && snaps.Length > 0)
             {
-                if (!snap.IsSnapped)
+                foreach (Snap snap in snaps)
                 {
-                    nextStage = false;
-                    isSnap = false;
-                    break;
-                }
-                else
-                {
-                    CurrentElectric += snap.target.ElectricCount;
-                }
-            }
-        }
-        bool preventSnap = false;
-        if (preventSnaps != null && preventSnaps.Length > 0)
-        {
-            foreach (Snap snap in preventSnaps)
-            {
-                if (snap.IsSnapped)
-                {
-                    preventSnap = true;
-                    CurrentElectric += snap.ElectricCount + snap.target.ElectricCount;
-                    //Debug.Log($"{snap.target.Name} : {snap.target.ElectricCount}" +
-                    //    $"| {snap.Name}: {snap.ElectricCount}");
+                    if (!snap.IsSnapped)
+                    {
+                        nextStage = false;
+                        isSnap = false;
+                        break;
+                    }
+                    else
+                    {
+                        CurrentElectric += snap.Target.ElectricCount;
+                    }
                 }
             }
-        }
-        Debug.Log("Current Electric Point: " + CurrentElectric);
-        if (CurrentElectric != nextScenePoint)
-        {
-            nextStage = false;
-            if (isSnap && preventSnap)
+            bool preventSnap = false;
+            if (preventSnaps != null && preventSnaps.Length > 0)
             {
-                CurrentElectric = 0;
-                Running = false;
+                foreach (Snap snap in preventSnaps)
+                {
+                    if (snap.IsSnapped)
+                    {
+                        preventSnap = true;
+                        CurrentElectric += snap.ElectricCount + snap.Target.ElectricCount;
+                        //Debug.Log($"{snap.target.Name} : {snap.target.ElectricCount}" +
+                        //    $"| {snap.Name}: {snap.ElectricCount}");
+                    }
+                }
             }
-        }
-        if (nextStage)
-        {
-            timer.Stop();
-            SpriteRenderer spriteRenderer = GameObject.Find("bg").GetComponent<SpriteRenderer>();
-            spriteRenderer.sortingLayerName = "game object";
-            spriteRenderer.sortingOrder = 15;
-            ScoreBoardText.text = CurrentElectric.ToString();
-            ScoreBoard.SetActive(true);
+            bool preventPipesSnapped = true;
+            GameObject[] preventDragPipesGos = GameObject.FindGameObjectsWithTag("PreventElectric");
+            if (preventDragPipesGos != null && preventDragPipesGos.Length > 0)
+            {
+                foreach (GameObject dragPipeGo in preventDragPipesGos)
+                {
+                    var preventPipe = dragPipeGo.GetComponent<DragTarget>();
+                    //Debug.Log($"{preventPipe.name}: {preventPipe.inSnap}");
+                    if (!preventPipe.inSnap)
+                    {
+                        preventPipesSnapped = false;
+                    }
+                }
+            }
+            Debug.Log("Current Electric Point: " + CurrentElectric);
+            if (CurrentElectric != nextScenePoint)
+            {
+                nextStage = false;
+                if (isSnap && preventSnap && preventPipesSnapped)
+                {
+                    CurrentElectric = 0;
+                    Running = false;
+                }
+            }
+            if (nextStage && preventPipesSnapped)
+            {
+                timer.Stop();
+                SpriteRenderer spriteRenderer = GameObject.Find("bg").GetComponent<SpriteRenderer>();
+                spriteRenderer.sortingLayerName = "game object";
+                spriteRenderer.sortingOrder = 15;
+                ScoreBoardText.text = CurrentElectric.ToString();
+                ScoreBoard.SetActive(true);
+            }
         }
     }
 
@@ -286,8 +306,16 @@ public class SceneScript : MonoBehaviour
     {
         if (preventSnaps != null && preventSnaps.Length > 0)
         {
-            int indexSnap = Random.RandomRange(1, preventSnaps.Length + 1);
-            nextScenePoint += -(PREVENTELEC_POINT_DIF * indexSnap);
+            GameObject[] preventDragPipesGos = GameObject.FindGameObjectsWithTag("PreventElectric");
+            if (preventDragPipesGos != null && preventDragPipesGos.Length > 0)
+            {
+                foreach (GameObject dragPipeGo in preventDragPipesGos)
+                {
+                    var dragTarget = dragPipeGo.GetComponent<DragTarget>();
+                    int indexSnap = Random.RandomRange(1, dragTarget.snaps.Length + 1);
+                    nextScenePoint += -(PREVENTELEC_POINT_DIF * indexSnap);
+                }
+            }
             foreach (Snap snap in preventSnaps)
             {
                 int i = int.Parse(snap.name.Split("_")[1]);

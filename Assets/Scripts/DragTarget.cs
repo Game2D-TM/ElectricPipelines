@@ -8,13 +8,12 @@ public class DragTarget : MonoBehaviour
     public string Zone { get; set; } = "";
     public string Index { get; set; } = "";
     public int ElectricCount { get; set; } = 0;
-    Snap[] snaps;
+    public Snap[] snaps;
     SpriteRenderer spriteR;
     Sprite sprite;
     public bool inSnap = false;
     public bool isElectric = false;
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         var sceneGo = GameObject.FindGameObjectWithTag("End");
         var sceneScript = sceneGo.GetComponent<SceneScript>();
@@ -27,13 +26,14 @@ public class DragTarget : MonoBehaviour
             if (Name.ToLower().Equals("prevent"))
             {
                 List<Transform> list = Utils.getChilderenByName(goZone, "preventSnap");
-                if(list != null && list.Count > 0)
+                if (list != null && list.Count > 0)
                 {
                     snaps = new Snap[list.Count];
                     int i = 0;
-                    foreach(Transform transform in list)
+                    foreach (Transform transform in list)
                     {
                         snaps[i] = transform.GetComponent<Snap>();
+                        snaps[i].Target = this;
                         i++;
                     }
                 }
@@ -44,6 +44,7 @@ public class DragTarget : MonoBehaviour
                 if (snapInZone == null) Debug.LogError("Snap not found in zone: " + Zone);
                 snaps = new Snap[1];
                 snaps[0] = snapInZone.GetComponent<Snap>();
+                snaps[0].Target = this;
             }
         }
         spriteR = gameObject.GetComponent<SpriteRenderer>();
@@ -51,10 +52,10 @@ public class DragTarget : MonoBehaviour
         LoadElectricFromPipe();
         //Debug.Log($"Pipe:{Name}: {ElectricCount} ");
     }
-
-    void FindSnap()
+    // Start is called before the first frame update
+    void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -66,7 +67,7 @@ public class DragTarget : MonoBehaviour
             foreach (Snap snap in snaps)
             {
                 snap.setPos(this);
-                if (snap.IsSnapped)
+                if (snap.IsSnapped && snap.Target.name.Equals(name))
                 {
                     haveSnap = true;
                 }
