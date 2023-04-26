@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663b06415e4028e42ab46368ba33d8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snaps: []
   inSnap: 0
   isElectric: 0
 --- !u!114 &173623887
@@ -440,6 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663b06415e4028e42ab46368ba33d8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snaps: []
   inSnap: 0
   isElectric: 0
 --- !u!114 &213332635
@@ -808,7 +810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab107e7d057c2d48af795661fd6c1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 60
+  timeRemaining: 90
   timeText: {fileID: 317911088}
 --- !u!114 &317911088
 MonoBehaviour:
@@ -1642,7 +1644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!331 &889098611
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -2464,7 +2465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!331 &1048744608
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -2694,7 +2694,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!331 &1124151127
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -3115,6 +3114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663b06415e4028e42ab46368ba33d8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snaps: []
   inSnap: 0
   isElectric: 0
 --- !u!114 &1295523176
@@ -3264,7 +3264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!331 &1296459870
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -3376,6 +3375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663b06415e4028e42ab46368ba33d8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snaps: []
   inSnap: 0
   isElectric: 0
 --- !u!114 &1456172327
@@ -4135,7 +4135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!331 &1850340838
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -4355,6 +4354,7 @@ MonoBehaviour:
   - {fileID: 2092260308}
   ScoreBoardText: {fileID: 1554968164}
   Running: 1
+  LoadObj: 0
 --- !u!212 &1885273812
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4467,7 +4467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62793f7abfee0429603e8832cf4c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!331 &1914343180
 SpriteMask:
   m_ObjectHideFlags: 0

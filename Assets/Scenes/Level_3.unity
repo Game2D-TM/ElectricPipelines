@@ -980,6 +980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663b06415e4028e42ab46368ba33d8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snaps: []
   inSnap: 0
   isElectric: 0
 --- !u!114 &484837053
@@ -3159,6 +3160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663b06415e4028e42ab46368ba33d8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snaps: []
   inSnap: 0
   isElectric: 0
 --- !u!114 &989111267
@@ -3347,6 +3349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663b06415e4028e42ab46368ba33d8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snaps: []
   inSnap: 0
   isElectric: 0
 --- !u!114 &1025683546
@@ -3715,6 +3718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663b06415e4028e42ab46368ba33d8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snaps: []
   inSnap: 0
   isElectric: 0
 --- !u!114 &1223187236
@@ -4152,6 +4156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663b06415e4028e42ab46368ba33d8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snaps: []
   inSnap: 0
   isElectric: 0
 --- !u!114 &1281861911
@@ -4602,7 +4607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab107e7d057c2d48af795661fd6c1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 60
+  timeRemaining: 120
   timeText: {fileID: 1643331476}
 --- !u!114 &1643331476
 MonoBehaviour:
@@ -5836,6 +5841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663b06415e4028e42ab46368ba33d8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snaps: []
   inSnap: 0
   isElectric: 0
 --- !u!114 &1959258416
@@ -6282,6 +6288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663b06415e4028e42ab46368ba33d8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snaps: []
   inSnap: 0
   isElectric: 0
 --- !u!114 &2032228277
